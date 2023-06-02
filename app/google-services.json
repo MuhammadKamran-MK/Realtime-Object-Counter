@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "98464294778",
+    "firebase_url": "https://stock-counter-deadb-default-rtdb.firebaseio.com",
+    "project_id": "stock-counter-deadb",
+    "storage_bucket": "stock-counter-deadb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98464294778:android:33353fd675fe407d1358c3",
+        "android_client_info": {
+          "package_name": "com.example.realtimeobjectcounter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98464294778-la7apjj9fv4usccj9fqptfe88e7mehho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBwwvDeaYkS3TbwnlkU588LEqmVsUF3bM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98464294778-la7apjj9fv4usccj9fqptfe88e7mehho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

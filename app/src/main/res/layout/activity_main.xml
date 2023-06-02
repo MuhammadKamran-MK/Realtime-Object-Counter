@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.MainActivity">
+
+        <include
+            android:id="@+id/includeToolBar"
+            layout="@layout/app_toolbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvShowObjects"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/includeToolBar"
+            tools:listitem="@layout/rv_objects_item" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNoDataExists"
+            style="@style/DarkTextViewStyle"
+            android:layout_centerInParent="true"
+            android:text="No data exists"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCamera"
+            style="@style/SubTextViewStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_70sdp"
+            android:layout_marginBottom="@dimen/_153sdp"
+            android:padding="@dimen/_3sdp"
+            android:text="Open Camera"
+            android:visibility="invisible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCamera"
+            style="@style/FloatingActionButtonStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_140sdp"
+            android:backgroundTint="@color/purple_500"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_photo_camera"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvGallery"
+            style="@style/SubTextViewStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_70sdp"
+            android:layout_marginBottom="@dimen/_92sdp"
+            android:padding="@dimen/_3sdp"
+            android:text="Open Gallery"
+            android:visibility="invisible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabGallery"
+            style="@style/FloatingActionButtonStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_80sdp"
+            android:backgroundTint="@color/purple_500"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_gallery"
+            app:tint="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAdd"
+            style="@style/FloatingActionButtonStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:backgroundTint="@color/purple_700"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="@color/white" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spinKitLoader"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:SpinKit_Color="@color/purple_700" />
+
+    </RelativeLayout>
+
+</layout>
